@@ -8,9 +8,15 @@ namespace adventOfCode_awieckert
         {
             var question1 = new Question1();
 
-            question1.SolveThatShit();
+            var solution1 = question1.SolveThatShit();
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"************ SOLUTION #1a ************");
+            Console.WriteLine($"There are: {solution1} increasing numbers");
+
+            var solution1b = question1.SolveThatShitAgain();
+
+            Console.WriteLine($"************ SOLUTION #1b ************");
+            Console.WriteLine($"There are: {solution1b} increasing numbers");
         }
     }
 }

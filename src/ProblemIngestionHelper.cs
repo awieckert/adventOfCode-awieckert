@@ -8,7 +8,7 @@ namespace adventOfCode_awieckert
     public class ProblemIngestionHelper
     {
 
-        public IEnumerable<int> GetListOfInts(string path)
+        public List<int> GetListOfInts(string path)
         {
             try
             {
@@ -19,7 +19,7 @@ namespace adventOfCode_awieckert
 
                 var listOfString = File.ReadAllLines(path);
 
-                return listOfString.Select(int.Parse);
+                return listOfString.Select(int.Parse).ToList();
             }
             catch (Exception ex)
             {
